@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "scripts": {
+    "start:dev": "concurrently \"yarn workspace @sql-browser-query-tool/api start:dev\" \"yarn workspace @sql-browser-query-tool/web start\"",
+    "lint:all": "concurrently \"yarn workspace @sql-browser-query-tool/api lint:fix\" \"yarn workspace @sql-browser-query-tool/web lint --fix\""
+  },
+  "workspaces": [
+    "./api",
+    "./web"
+  ],
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
