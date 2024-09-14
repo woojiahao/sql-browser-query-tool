@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+@import "~normalize.css";
+@import "~@blueprintjs/core/lib/css/blueprint.css";
+@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+
+/* :root {
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+body {
+  height: 100vh;
+} */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
+  height: 100vh;
   flex-direction: column;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 0 25px;
+  border-bottom: 1px solid gainsboro;
 }
 
-.App-link {
-  color: #61dafb;
+.button-group {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.editor {
+  flex-grow: 1;
+  /* height: 100%; */
+}
+
+footer {
+  border-top: 1px solid gainsboro;
+  padding: 0 25px;
 }
